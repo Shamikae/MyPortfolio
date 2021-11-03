@@ -27,22 +27,22 @@ export default function ServiceSec() {
     return (
         <ServicesItemsStyles>
       <div className="container">
-        <SectionTitle subheading="What i will do for you" heading="Services" />
+        <SectionTitle subheading="" heading="Services" />
         <div className="services__allItems">
           <ServicesSectionItem
             icon={<MdDesktopMac />}
             title="web design"
-            desc="I do ui/ux design for the website that helps website to get a unique look."
+            desc="I create UI/UX design's that help attract users."
           />
           <ServicesSectionItem
             icon={<MdCode />}
             title="web dev"
-            desc="I also develop the websites. I create high performance website with blazing fast speed."
+            desc="I create high performance website's."
           />
           <ServicesSectionItem
             icon={<MdPhonelinkSetup />}
-            title="app Dev"
-            desc="I develop mobile application. I create mobile app with eye catching ui. "
+            title="Cloud Dev"
+            desc="I build solutions in the cloud."
           />
         </div>
       </div>

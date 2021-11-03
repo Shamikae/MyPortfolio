@@ -81,20 +81,14 @@ export default function About() {
             <div className="top-section">
               <div className="left">
                 <p className="about__subheading">
-                  Hi, I am <span>Ayan Khan</span>
+                  Hi, I am <span>Shamika E</span>
                 </p>
-                <h2 className="about__heading">A freelance Web developer</h2>
+                <h2 className="about__heading">A freelance Web Developer and Cloud Engineer</h2>
                 <div className="about__info">
                   <PText>
-                    I am from chittagong, Bangladesh. A place of beauty and
-                    nature. Since my childhood, i love art and design. I always
-                    try to design stuff with my unique point of view. I also love
-                    to create things that can be usefull to others.
+                    I am from New York, NY. A city that never sleeps. 
                     <br /> <br />
-                    I started coding since I was in high school. Coding is also an
-                    art for me. I love it and now I have the opportunity to design
-                    along with the coding. I find it really interesting and I
-                    enjoyed the process a lot.
+                    Coding is my form of artistic expression. I love it 
                     <br />
                     <br />
                     My vision is to make the world a better place. Now almost
@@ -103,7 +97,7 @@ export default function About() {
                     place.
                   </PText>
                 </div>
-                <Button btnText="Download CV" btnLink="#" />
+                <Button btnText="Download Resume" btnLink="#" />
               </div>
               <div className="right">
                 <img src={AboutImg} alt="me" />
