@@ -95,11 +95,11 @@ export default function Footer() {
             heading="Contact Info"
             links={[
               {
-                title: '+88012312',
-                path: 'tel:+88012312',
+                title: 'Phone',
+                path: 'tel:+1(***)***-****',
               },
               {
-                title: 'e.shamik@yahoo.com',
+                title: 'Email',
                 path: 'mailto:e.shamika@yahoo.com',
               },
               {

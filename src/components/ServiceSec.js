@@ -1,5 +1,6 @@
 import React from 'react'
 import { MdDesktopMac, MdCode, MdPhonelinkSetup } from 'react-icons/md';
+import { AiOutlineCloudServer } from 'react-icons/ai';
 import styled from 'styled-components';
 import SectionTitle from './SectionTitle';
 import ServicesSectionItem from './ServicesSectionItem';
@@ -40,7 +41,7 @@ export default function ServiceSec() {
             desc="I create high performance website's."
           />
           <ServicesSectionItem
-            icon={<MdPhonelinkSetup />}
+            icon={<AiOutlineCloudServer />}
             title="Cloud Dev"
             desc="I build solutions in the cloud."
           />

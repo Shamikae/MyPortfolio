@@ -5,6 +5,7 @@ import PText from "./PText";
 import Button from "./Button";
 import SocialMediaArrow from "../assets/images/social-media-arrow.svg";
 import ScrollDownArrow from "../assets/images/scroll-down-arrow.svg";
+import { FaFacebookSquare } from "react-icons/fa";
 // import PText from './PText';
 
 const HeroStyles = styled.div`
@@ -178,11 +179,12 @@ export default function Hero() {
               <ul>
                 <li>
                   <a
+                  icon={<FaFacebookSquare />}
                     href="http://facebook.com/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    FB
+                    FB 
                   </a>
                 </li>
                 <li>
