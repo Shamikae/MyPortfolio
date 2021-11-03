@@ -1,6 +1,5 @@
 const testimonials = [
-    {
-      id: 1,
+    { id: 1,
       name: 'Sha',
       title: 'CEO',
       org: 'Syber Web Design',

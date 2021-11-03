@@ -71,7 +71,7 @@ const AboutSectionStyles = styled.div`
 `;
 
 export default function AboutSec() {
-    return (
+    return(
         <AboutSectionStyles>
         <div className="container">
           <div className="aboutSection__left">
