@@ -164,7 +164,7 @@ export default function Hero() {
             <PText>
               I am working as a freelance web designer and developer. I have a
               passion for web design and I love creating new web experiences for
-              the people. I create cloud architecture solutions. Sky's the
+              people. I create cloud architecture solutions. Sky's the
               limit.
             </PText>
             <Button btnText="See My Work" btnLink="/projects" />
