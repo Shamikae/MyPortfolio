@@ -102,10 +102,7 @@ export default function TestimonialsSec() {
   return (
     <TestimonialSectionStyles>
       <div className="container">
-        <SectionTitle
-          subheading="see what our clients say about us"
-          heading="Testimonials"
-        />
+        <SectionTitle subheading="" heading="References" />
         <div className="testimonial__wrapper">
           <SwitchTransition component={null}>
             <CSSTransition key={activeSlide.id} timeout={300} classNames="fade">

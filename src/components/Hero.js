@@ -1,11 +1,12 @@
-import React from "react";
-import styled from "styled-components";
-import HeroImg from "../assets/images/hero.png";
-import PText from "./PText";
-import Button from "./Button";
-import SocialMediaArrow from "../assets/images/social-media-arrow.svg";
-import ScrollDownArrow from "../assets/images/scroll-down-arrow.svg";
-import { FaFacebookSquare } from "react-icons/fa";
+import React from 'react';
+import styled from 'styled-components';
+import { FaFacebookSquare, FaLinkedin, FaGithub } from 'react-icons/fa';
+import HeroImg from '../assets/images/hero.png';
+import PText from './PText';
+import Button from './Button';
+import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
+import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
+
 // import PText from './PText';
 
 const HeroStyles = styled.div`
@@ -28,7 +29,7 @@ const HeroStyles = styled.div`
       width: 100%;
     }
     .hero__name {
-      font-family: "Montserrat SemiBold";
+      font-family: 'Montserrat SemiBold';
       font-size: 7rem;
       color: var(--white);
     }
@@ -88,8 +89,8 @@ const HeroStyles = styled.div`
         margin-bottom: 1rem;
         a {
           display: inline-block;
-          font-size: 1.6rem;
-          transform: rotate(-90deg);
+          font-size: 3.6rem;
+          transform: rotate(360deg);
           letter-spacing: 5px;
           margin-bottom: 2rem;
         }
@@ -165,8 +166,7 @@ export default function Hero() {
             <PText>
               I am working as a freelance web designer and developer. I have a
               passion for web design and I love creating new web experiences for
-              people. I create cloud architecture solutions. Sky's the
-              limit.
+              people. I create cloud architecture solutions. Sky's the limit.
             </PText>
             <Button btnText="See My Work" btnLink="/projects" />
           </div>
@@ -177,14 +177,13 @@ export default function Hero() {
             </div>
             <div className="hero__social__text">
               <ul>
-                <li>
+                {/* <li>
                   <a
-                  icon={<FaFacebookSquare />}
                     href="http://facebook.com/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    FB 
+                    <FaFacebookSquare />
                   </a>
                 </li>
                 <li>
@@ -195,23 +194,23 @@ export default function Hero() {
                   >
                     TW
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a
-                    href="http://isntagram.com/"
+                    href="http://github.com/shamikae"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    IG
+                    <FaGithub />
                   </a>
                 </li>
                 <li>
                   <a
-                    href="http://webc.com"
+                    href="https://www.linkedin.com/in/shamikaearle/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    LI
+                    <FaLinkedin />
                   </a>
                 </li>
               </ul>

@@ -1,5 +1,5 @@
-import React from 'react'
-import { MdDesktopMac, MdCode, MdPhonelinkSetup } from 'react-icons/md';
+import React from 'react';
+import { MdDesktopMac, MdCode } from 'react-icons/md';
 import { AiOutlineCloudServer } from 'react-icons/ai';
 import styled from 'styled-components';
 import SectionTitle from './SectionTitle';
@@ -25,8 +25,8 @@ const ServicesItemsStyles = styled.div`
 `;
 
 export default function ServiceSec() {
-    return (
-        <ServicesItemsStyles>
+  return (
+    <ServicesItemsStyles>
       <div className="container">
         <SectionTitle subheading="" heading="Services" />
         <div className="services__allItems">
@@ -48,5 +48,5 @@ export default function ServiceSec() {
         </div>
       </div>
     </ServicesItemsStyles>
-    )
+  );
 }
