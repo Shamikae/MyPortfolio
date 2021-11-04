@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import FooterCol from './FooterCol';
 import PText from './PText';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const FooterStyle = styled.div`
   background-color: var(--deep-dark);
@@ -109,19 +110,19 @@ export default function Footer() {
         </div>
         <div className="footer__col4">
           <FooterCol
-            heading="social Links"
+            heading="Social Links"
             links={[
               {
-                title: 'Facebook',
-                path: 'http://facebook.com',
+                title: 'GitHub',
+                path: 'http://github.com/shamikae',
               },
               {
                 title: 'Twitter',
                 path: 'http://twitter.com',
               },
               {
-                title: 'Instagram',
-                path: 'http://instagram.com',
+                title: 'LinkedIn',
+                path: 'https://www.linkedin.com/in/shamikaearle/',
               },
             ]}
           />
@@ -130,7 +131,7 @@ export default function Footer() {
       <div className="copyright">
         <div className="container">
           <div className="cc">
-            <PText style={{ textAlign: 'center' }}>
+            <PText>
               Copyright ©2021 Shamika Earle | Made By{' '}
               <a target="_blank" rel="noreferrer" href="http://.com">
                 Meek 💙
