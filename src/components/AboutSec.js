@@ -4,6 +4,7 @@ import Button from './Button';
 import PText from './PText';
 import SectionTitle from './SectionTitle';
 import AboutImg from '../assets/images/about-sec-img.png';
+import MeImg from '../assets/images/Meimage.GIF';
 
 const AboutSectionStyles = styled.div`
   padding: 10rem 0;
@@ -71,26 +72,28 @@ const AboutSectionStyles = styled.div`
 `;
 
 export default function AboutSec() {
-    return(
-        <AboutSectionStyles>
-        <div className="container">
-          <div className="aboutSection__left">
-            <SectionTitle
-              subheading="Let me introduce myself"
-              heading="About Me"
-            />
-            <PText>
-              I am a freelance website designer and developer from New York. I create professional websites and provide application solutions for any business. I love bring ideas to life. 
-            </PText>
-            <div className="aboutSection__buttons">
-              <Button btnText="Works" btnLink="/projects" />
-              <Button btnText="Read More" btnLink="/about" outline />
-            </div>
-          </div>
-          <div className="aboutSection__right">
-            <img className="aboutImg" src={AboutImg} alt="Img" />
+  return (
+    <AboutSectionStyles>
+      <div className="container">
+        <div className="aboutSection__left">
+          <SectionTitle
+            subheading="Let me introduce myself"
+            heading="About Me"
+          />
+          <PText>
+            I am a freelance website designer and developer from New York. I
+            create professional websites and provide application solutions for
+            any business. I love bring ideas to life.
+          </PText>
+          <div className="aboutSection__buttons">
+            <Button btnText="Works" btnLink="/projects" />
+            <Button btnText="Read More" btnLink="/about" outline />
           </div>
         </div>
-      </AboutSectionStyles>
-    );
+        <div className="aboutSection__right">
+          <img className="aboutImg" src={MeImg} alt="Img" />
+        </div>
+      </div>
+    </AboutSectionStyles>
+  );
 }

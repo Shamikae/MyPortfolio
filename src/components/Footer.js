@@ -8,6 +8,7 @@ const FooterStyle = styled.div`
   padding-top: 10rem;
   .container {
     display: flex;
+    justify-content: center;
     gap: 3rem;
   }
   .footer__col1 {
@@ -24,7 +25,7 @@ const FooterStyle = styled.div`
   }
   .copyright {
     background-color: var(--dark-bg);
-    text-align: left;
+    text-align: center;
     padding: 1rem 0;
     margin-top: 5rem;
     .para {
@@ -58,10 +59,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer__col1">
           <h1 className="footer__col1__title">Shamika E</h1>
-          <PText>
-            A freelance web designer and developer from New York.
-            
-          </PText>
+          <PText>A freelance web designer and developer from New York.</PText>
         </div>
         <div className="footer__col2">
           <FooterCol
@@ -131,12 +129,14 @@ export default function Footer() {
       </div>
       <div className="copyright">
         <div className="container">
-          <PText>
-            © 2021 - Shamika Earle | Designed By{' '}
-            <a target="_blank" rel="noreferrer" href="http://.com">
-              Syber Designs
-            </a>{' '}
-          </PText>
+          <div className="cc">
+            <PText style={{ textAlign: 'center' }}>
+              Copyright ©2021 Shamika Earle | Made By{' '}
+              <a target="_blank" rel="noreferrer" href="http://.com">
+                Meek 💙
+              </a>{' '}
+            </PText>
+          </div>
         </div>
       </div>
     </FooterStyle>
