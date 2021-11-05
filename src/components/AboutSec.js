@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import Button from './Button';
 import PText from './PText';
 import SectionTitle from './SectionTitle';
-import AboutImg from '../assets/images/about-sec-img.png';
-import MeImg from '../assets/images/Meimage.GIF';
+// import AboutImg from '../assets/images/about-sec-img.png';
+import MeImg from '../assets/images/MeImage.GIF';
 
 const AboutSectionStyles = styled.div`
   padding: 10rem 0;
@@ -31,6 +31,10 @@ const AboutSectionStyles = styled.div`
     justify-content: flex-start;
     gap: 2rem;
     margin-top: 2rem;
+  }
+  .aboutImg {
+    padding: 3rem;
+    border-radius: 50%;
   }
   @media only screen and (max-width: 950px) {
     .aboutSection__left {
@@ -81,17 +85,23 @@ export default function AboutSec() {
             heading="About Me"
           />
           <PText>
-            I am a freelance website designer and developer from New York. I
-            create professional websites and provide application solutions for
-            any business. I love bring ideas to life.
+            Hi, my name is Shamika and I am a website designer and developer
+            from New York. I create professional websites and provide
+            application solutions for any business. I love bringing ideas to
+            life.
           </PText>
           <div className="aboutSection__buttons">
-            <Button btnText="Works" btnLink="/projects" />
+            <Button btnText="Projects" btnLink="/projects" />
             <Button btnText="Read More" btnLink="/about" outline />
           </div>
         </div>
         <div className="aboutSection__right">
-          <img className="aboutImg" src={MeImg} alt="Img" />
+          <img
+            className="aboutImg"
+            src={MeImg}
+            alt="Img"
+            style={{ padding: '3rem', borderradius: '50%' }}
+          />
         </div>
       </div>
     </AboutSectionStyles>

@@ -4,36 +4,38 @@ import { MdArrowForward, MdArrowBack } from 'react-icons/md';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
 import PText from './PText';
 import SectionTitle from './SectionTitle';
-import testimonials from '../assets/data/testimonials';
+import Refs from '../assets/data/Refs';
 
-const TestimonialSectionStyles = styled.div`
+const RefSectionStyles = styled.div`
   overflow-x: hidden;
   padding: 10rem 0;
   text-align: center;
-  .testimonial__wrapper {
+  background-color: blue;
+  .Ref__wrapper {
     position: relative;
     max-width: 700px;
     margin: 0 auto;
   }
-  .testimonial__info {
+  .Ref__info {
     width: 100%;
     height: fit-content;
     padding: 3rem;
-    background-color: var(--deep-dark);
+    background-color: rgba(0, 0, 0, 0.05);
+    /* background-color: var(--deep-dark); */
     border-radius: 12px;
     margin-top: 5rem;
   }
-  .testimonial__desc {
+  .Ref__desc {
     .para {
       text-align: center;
     }
   }
-  .testimonial__name {
+  .Ref__name {
     margin-top: 4rem;
     font-family: 'Montserrat Bold';
     font-size: 2.2rem;
   }
-  .testimonial__title {
+  .Ref__title {
     font-size: 1.6rem;
     margin-top: 0.3rem;
   }
@@ -80,12 +82,12 @@ const TestimonialSectionStyles = styled.div`
   }
 `;
 
-export default function TestimonialsSec() {
+export default function RefsSec() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const activeSlide = testimonials[activeIndex];
+  const activeSlide = Refs[activeIndex];
 
   function handleNext() {
-    if (activeIndex >= testimonials.length - 1) {
+    if (activeIndex >= Refs.length - 1) {
       setActiveIndex(0);
     } else {
       setActiveIndex((oldIndex) => oldIndex + 1);
@@ -93,25 +95,25 @@ export default function TestimonialsSec() {
   }
   function handlePrev() {
     if (activeIndex === 0) {
-      setActiveIndex(testimonials.length - 1);
+      setActiveIndex(Refs.length - 1);
     } else {
       setActiveIndex((oldIndex) => oldIndex - 1);
     }
   }
 
   return (
-    <TestimonialSectionStyles>
+    <RefSectionStyles>
       <div className="container">
         <SectionTitle subheading="" heading="References" />
-        <div className="testimonial__wrapper">
+        <div className="Ref__wrapper">
           <SwitchTransition component={null}>
             <CSSTransition key={activeSlide.id} timeout={300} classNames="fade">
-              <div className="testimonial__info">
-                <div className="testimonial__desc">
+              <div className="Ref__info">
+                <div className="Ref__desc">
                   <PText>{activeSlide.desc}</PText>
                 </div>
-                <h2 className="testimonial__name">{activeSlide.name}</h2>
-                <p className="testimonial__title">
+                <h2 className="Ref__name">{activeSlide.name}</h2>
+                <p className="Ref__title">
                   {activeSlide.title}, <br /> {activeSlide.org}
                 </p>
               </div>
@@ -140,6 +142,6 @@ export default function TestimonialsSec() {
           </div>
         </div>
       </div>
-    </TestimonialSectionStyles>
+    </RefSectionStyles>
   );
 }

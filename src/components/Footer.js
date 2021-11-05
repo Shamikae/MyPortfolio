@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import FooterCol from './FooterCol';
 import PText from './PText';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+// import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const FooterStyle = styled.div`
   background-color: var(--deep-dark);
@@ -102,7 +102,7 @@ export default function Footer() {
                 path: 'mailto:e.shamika@yahoo.com',
               },
               {
-                title: ' New York,NY',
+                title: ' New York, NY',
                 path: 'http://google.com/maps',
               },
             ]}

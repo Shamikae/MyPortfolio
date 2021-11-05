@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FaFacebookSquare, FaLinkedin, FaGithub } from 'react-icons/fa';
-import HeroImg from '../assets/images/hero.png';
+// import HeroImg from '../assets/images/hero.png';
+import Laptop from '../assets/images/laptop.jpg';
 import PText from './PText';
 import Button from './Button';
 import SocialMediaArrow from '../assets/images/social-media-arrow.svg';
@@ -11,6 +12,7 @@ import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
 
 const HeroStyles = styled.div`
   .hero {
+    background-color: blue;
     height: 100vh;
     min-height: 1000px;
     width: 100%;
@@ -48,10 +50,10 @@ const HeroStyles = styled.div`
   .hero__scrollDown {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 0rem;
     position: absolute;
 
-    bottom: 20px;
+    bottom: 500px;
     width: 50px;
   }
   .hero__social {
@@ -67,7 +69,7 @@ const HeroStyles = styled.div`
     p {
       font-size: 1.6rem;
       transform: translateY(-70px) rotate(90deg);
-      letter-spacing: 0.7rem;
+      letter-spacing: 0.2rem;
       text-transform: uppercase;
     }
     img {
@@ -117,12 +119,12 @@ const HeroStyles = styled.div`
     }
     .hero__social {
       left: 0px;
-      bottom: -15%;
+      bottom: 5%;
       width: 20px;
       .hero__social__indicator {
         width: 20px;
         p {
-          font-size: 1.2rem;
+          font-size: 1.5rem;
         }
         img {
           max-height: 22px;
@@ -142,6 +144,7 @@ const HeroStyles = styled.div`
     .hero__scrollDown {
       right: 0;
       width: 20px;
+      bottom: 5%;
       gap: 1rem;
       p {
         font-size: 1.3rem;
@@ -160,7 +163,7 @@ export default function Hero() {
             <span className="hero__name">Shamika</span>
           </h1>
           <div className="hero__img">
-            <img src={HeroImg} alt="" />
+            <img src={Laptop} alt="" />
           </div>
           <div className="hero__info">
             <PText>
