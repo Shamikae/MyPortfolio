@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FaFacebookSquare, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { /* FaFacebookSquare, */ FaLinkedin, FaGithub } from 'react-icons/fa';
 // import HeroImg from '../assets/images/hero.png';
 import Laptop from '../assets/images/laptop.jpg';
 import PText from './PText';
@@ -12,7 +12,7 @@ import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
 
 const HeroStyles = styled.div`
   .hero {
-    background-color: blue;
+    background-color: var(--blue);
     height: 100vh;
     min-height: 1000px;
     width: 100%;
@@ -41,7 +41,7 @@ const HeroStyles = styled.div`
     width: 100%;
     height: 600px;
     margin: 0 auto;
-    border: 2px solid var(--gray-1);
+    border: 2px solid var(--black);
   }
   .hero__info {
     margin-top: -18rem;
@@ -52,7 +52,7 @@ const HeroStyles = styled.div`
     flex-direction: column;
     gap: 0rem;
     position: absolute;
-
+    margin-left: 5px;
     bottom: 500px;
     width: 50px;
   }
@@ -134,7 +134,7 @@ const HeroStyles = styled.div`
         ul {
           li {
             a {
-              font-size: 1.2rem;
+              font-size: 2.2rem;
               margin-bottom: 1rem;
             }
           }

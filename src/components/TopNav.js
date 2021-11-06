@@ -38,7 +38,7 @@ const NavMenuStyles = styled.div`
   }
   .mobile-menu-icon {
     position: absolute;
-    right: 1rem;
+    left: 1rem;
     top: 1rem;
     width: 4rem;
     cursor: pointer;
@@ -68,7 +68,7 @@ const NavMenuStyles = styled.div`
       max-width: 300px;
       border-radius: 12px;
       position: absolute;
-      right: 1rem;
+      left: 1rem;
       top: var(--top);
       .closeNavIcon {
         display: block;
