@@ -12,7 +12,7 @@ import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
 
 const HeroStyles = styled.div`
   .hero {
-    background-color: var(--blue);
+    background-image: radial-gradient(purple, var(--blue), white);
     height: 100vh;
     min-height: 1000px;
     width: 100%;
@@ -31,20 +31,30 @@ const HeroStyles = styled.div`
       width: 100%;
     }
     .hero__name {
-      font-family: 'Montserrat SemiBold';
+      font-family: 'Glamore Regular';
       font-size: 7rem;
       color: var(--white);
+      position: relative;
+      z-index: 90;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
     }
   }
   .hero__img {
     max-width: 900px;
     width: 100%;
-    height: 600px;
+    height: auto;
     margin: 0 auto;
     border: 2px solid var(--black);
+    position: relative;
   }
   .hero__info {
     margin-top: -18rem;
+    background-color: rgba(17, 25, 40, 0.38);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    position: relative;
+    bottom: -90px;
   }
   .hero__social,
   .hero__scrollDown {
@@ -53,14 +63,15 @@ const HeroStyles = styled.div`
     gap: 0rem;
     position: absolute;
     margin-left: 5px;
-    bottom: 500px;
+    /* bottom: 500px; */
     width: 50px;
   }
   .hero__social {
-    left: 50px;
+    left: -10px;
+    bottom: 500px;
   }
   .hero__scrollDown {
-    right: 50px;
+    right: 5px;
   }
 
   .hero__social__indicator,
@@ -119,7 +130,7 @@ const HeroStyles = styled.div`
     }
     .hero__social {
       left: 0px;
-      bottom: 5%;
+      bottom: 50%;
       width: 20px;
       .hero__social__indicator {
         width: 20px;
@@ -167,9 +178,9 @@ export default function Hero() {
           </div>
           <div className="hero__info">
             <PText>
-              I am working as a freelance web designer and developer. I have a
-              passion for web design and I love creating new web experiences for
-              people. I create cloud architecture solutions. Sky's the limit.
+              I am a web designer and developer. I have a passion for web design
+              and I love creating new web experiences for people. I create cloud
+              architecture solutions. Sky's the limit.
             </PText>
             <Button btnText="See My Work" btnLink="/projects" />
           </div>

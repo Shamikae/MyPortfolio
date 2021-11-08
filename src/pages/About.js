@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import PText from '../components/PText';
-import Button from '../components/Button';
+// import Button from '../components/Button';
 import AboutImg from '../assets/images/about-page-img.png';
 import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
-import Resume from '../assets/docs/Shamika Earle Resume.pdf';
+import ResumeButton from '../components/Resumebutton';
 
 const AboutPageStyles = styled.div`
   padding: 20rem 0 10rem 0;
@@ -100,12 +100,11 @@ export default function About() {
                   place.
                 </PText>
               </div>
-              <Button
-                target="_blank"
-                btnText="Download Resume"
-                btnLink={Resume}
-                label="Resume"
-              />
+              {/* <Button btnText="Download Resume" btnLink="#" /> */}
+              <ResumeButton href="https://farmingdale-my.sharepoint.com/:b:/g/personal/earls_farmingdale_edu/ERSSlL2Gv11Mr4utKM9NRMMBq0036ZZDbBzB9RueCVxO6A">
+                {' '}
+                Resume
+              </ResumeButton>
             </div>
             <div className="right">
               <img src={AboutImg} alt="me" />

@@ -2,11 +2,17 @@ import { createGlobalStyle } from 'styled-components';
 import RobotoMonoRegular from '../assets/fonts/RobotoMono-Regular.ttf';
 import MontserratSemiBold from '../assets/fonts/Montserrat-SemiBold.ttf';
 import MontserratBold from '../assets/fonts/Montserrat-Bold.ttf';
+import Glamore from '../assets/fonts/Glamore.ttf';
 
 const Typography = createGlobalStyle`
   @font-face {
     font-family: 'RobotoMono Regular';
     src: url(${RobotoMonoRegular});
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Glamore Regular';
+    src: url(${Glamore});
     font-style: normal;
   }
   @font-face {
@@ -28,7 +34,7 @@ const Typography = createGlobalStyle`
     color: var(--black);
   }
   h1,h2,h3,h4,h5,h6{
-    font-family: 'Montserrat SemiBold'
+    font-family: 'Montserrat SemiBold';
   }
 
 `;
