@@ -101,7 +101,10 @@ export default function About() {
                 </PText>
               </div>
               {/* <Button btnText="Download Resume" btnLink="#" /> */}
-              <ResumeButton href="https://farmingdale-my.sharepoint.com/:b:/g/personal/earls_farmingdale_edu/ERSSlL2Gv11Mr4utKM9NRMMBq0036ZZDbBzB9RueCVxO6A">
+              <ResumeButton
+                href="https://farmingdale-my.sharepoint.com/:b:/g/personal/earls_farmingdale_edu/ERSSlL2Gv11Mr4utKM9NRMMBq0036ZZDbBzB9RueCVxO6A"
+                target="_blank"
+              >
                 {' '}
                 Resume
               </ResumeButton>
