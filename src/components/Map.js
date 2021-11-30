@@ -54,7 +54,7 @@ export default function Map() {
             className="map__card__link"
             href="https://www.google.com/maps/place/Empire+State+Building/@40.7484445,-73.9878531,17z/data=!3m1!4b1!4m5!3m4!1s0x89c259a9b3117469:0xd134e199a405a163!8m2!3d40.7484405!4d-73.9856644"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             Open in google map
           </a>

@@ -213,7 +213,7 @@ export default function Hero() {
                   <a
                     href="http://github.com/shamikae"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                   >
                     <FaGithub />
                   </a>
@@ -222,7 +222,7 @@ export default function Hero() {
                   <a
                     href="https://www.linkedin.com/in/shamikaearle/"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                   >
                     <FaLinkedin />
                   </a>

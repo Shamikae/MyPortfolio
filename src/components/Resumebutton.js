@@ -27,7 +27,12 @@ export default function ResumeButton({
 }) {
   return (
     <ButtonStyle outline={outline} className="button-wrapper">
-      <a className="button" href={btnLink} target="_blank" rel="noreferrer">
+      <a
+        className="button"
+        href={btnLink}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {btnText}
       </a>
     </ButtonStyle>

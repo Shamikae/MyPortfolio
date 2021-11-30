@@ -133,8 +133,11 @@ export default function Footer() {
           <div className="cc">
             <PText>
               Copyright ©2021 Shamika Earle | Made By{' '}
-              <a target="_blank" rel="noreferrer" href="http://.com">
-                Meek 💙
+              <a target="_blank" rel="noopener noreferrer" href="http://.com">
+                Meek{' '}
+                <span role="img" aria-labelledby="panda1">
+                  💙
+                </span>
               </a>{' '}
             </PText>
           </div>

@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from 'react';
 import styled from 'styled-components';
 import Button from './Button';
@@ -5,6 +6,7 @@ import PText from './PText';
 import SectionTitle from './SectionTitle';
 // import AboutImg from '../assets/images/about-sec-img.png';
 import MeImg from '../assets/images/MeImage.GIF';
+// import blue from '../assets/images/blue.jpg';
 
 const AboutSectionStyles = styled.div`
   padding: 10rem 0;
@@ -79,6 +81,7 @@ export default function AboutSec() {
   return (
     <AboutSectionStyles>
       <div className="container">
+        {/* <div className="aboutB" style={AboutSectionStyles} /> */}
         <div className="aboutSection__left">
           <SectionTitle
             subheading="Let me introduce myself"
