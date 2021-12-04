@@ -20,8 +20,10 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Roboto Mono';
     /* background: radial-gradient(purple, var(--blue), white);
     background-position: fixed ; */
-    background: url(https://static.vecteezy.com/system/resources/previews/001/896/932/non_2x/light-blue-and-purple-bokeh-background-free-photo.jpg);
+    background: url(https://png.pngtree.com/thumb_back/fh260/background/20201013/pngtree-trending-gradient-design-image_414362.jpg);
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   ul,li{
     list-style: none;

@@ -17,9 +17,17 @@ const ProjectItemStyles = styled.div`
   }
   .projectItem__info {
     margin-top: 1rem;
-    background-color: var(--deep-dark);
+    /* background-color: var(--deep-dark); */
     padding: 1rem;
-    border-radius: 12px;
+    /* border-radius: 12px; */
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.2px);
+    -webkit-backdrop-filter: blur(8.2px);
+    border: 1px solid rgba(255, 255, 255, 0.17);
   }
   .projectItem__title {
     font-size: 2.2rem;

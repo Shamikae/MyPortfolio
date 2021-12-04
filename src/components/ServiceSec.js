@@ -29,7 +29,7 @@ export default function ServiceSec() {
   return (
     <ServicesItemsStyles>
       <div className="container">
-        <SectionTitle subheading="" heading="Services" />
+        <SectionTitle subheading="" heading="Skills" />
         <div className="services__allItems">
           <ServicesSectionItem
             icon={<MdDesktopMac />}

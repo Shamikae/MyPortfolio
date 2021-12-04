@@ -50,11 +50,38 @@ const HeroStyles = styled.div`
   }
   .hero__info {
     margin-top: -18rem;
-    background-color: rgba(17, 25, 40, 0.38);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
+    /* background-color: rgba(17, 25, 40, 0.38); */
+    /* border-radius: 12px; */
+    /* border: 1px solid rgba(255, 255, 255, 0.125); */
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.23);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.2px);
+    -webkit-backdrop-filter: blur(8.2px);
+    border: 1px solid rgba(255, 255, 255, 0.17);
+
+    width: 60vw;
+    margin: -18rem auto 0;
+
     position: relative;
     bottom: -90px;
+    .para {
+      background: none;
+      /* From https://css.glass */
+      border-radius: none;
+      box-shadow: none;
+      backdrop-filter: none;
+      border: none;
+    }
+    p {
+      padding: 1rem;
+      margin-top: 1rem;
+    }
+    .button-wrapper {
+      padding-bottom: 1rem;
+    }
   }
   .hero__social,
   .hero__scrollDown {
