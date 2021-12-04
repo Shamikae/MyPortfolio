@@ -8,10 +8,18 @@ const ButtonStyle = styled.div`
     background-color: ${(props) =>
       props.outline ? 'transperant' : 'var(--gray-1)'};
     padding: 0.7em 2em;
-    border: 2px solid var(--gray-1);
+    /* border: 2px solid var(--gray-1); */
     border-radius: 8px;
     display: inline-block;
     color: ${(props) => (props.outline ? 'var(--gary-1)' : 'black')};
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.23);
+    /* border-radius: 16px; */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.2px);
+    -webkit-backdrop-filter: blur(8.2px);
+    border: 1px solid rgba(255, 255, 255, 0.17);
   }
   @media only screen and (max-width: 768px) {
     .button {

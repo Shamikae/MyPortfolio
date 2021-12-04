@@ -20,6 +20,7 @@ const ProjectItemStyles = styled.div`
     /* background-color: var(--deep-dark); */
     padding: 1rem;
     /* border-radius: 12px; */
+    height: 15rem;
 
     /* From https://css.glass */
     background: rgba(255, 255, 255, 0.23);

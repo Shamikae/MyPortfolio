@@ -25,14 +25,23 @@ const ProjectSectionStyle = styled.div`
     position: absolute;
     height: 50px;
     width: 50px;
-    background: var(--deep-dark);
+    /* background: var(--deep-dark); */
     z-index: 10;
     right: 60px;
     left: auto;
     top: 0;
     transform: translateY(50%);
-    color: var(--gray-1);
+    /* color: var(--gray-1); */
+    color: black;
     border-radius: 8px;
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.43);
+    /* border-radius: 16px; */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.2px);
+    -webkit-backdrop-filter: blur(8.2px);
+    border: 1px solid rgba(255, 255, 255, 0.27);
   }
   .swiper-button-next {
     right: 0;
