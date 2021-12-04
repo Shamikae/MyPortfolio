@@ -1,11 +1,11 @@
-import React from "react";
-import styled from "styled-components";
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation } from "swiper";
-import ProjectItem from "./ProjectItem";
-import SectionTitle from "./SectionTitle";
-import "swiper/swiper-bundle.min.css";
-import projects from "../assets/data/projects";
+import React from 'react';
+import styled from 'styled-components';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Navigation } from 'swiper';
+import ProjectItem from './ProjectItem';
+import SectionTitle from './SectionTitle';
+import 'swiper/swiper-bundle.min.css';
+import projects from '../assets/data/projects';
 
 SwiperCore.use([Navigation]);
 

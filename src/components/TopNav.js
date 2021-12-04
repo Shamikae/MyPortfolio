@@ -29,7 +29,7 @@ const NavMenuStyles = styled.div`
       font-family: 'Glamore';
       padding: 1rem 2rem;
       font-size: 2rem;
-      color: var(--gary-1);
+      color: var(--white);
       outline: none;
     }
     .active {

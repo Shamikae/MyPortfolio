@@ -18,7 +18,10 @@ const GlobalStyles = createGlobalStyle`
   html{
     font-size: 10px;
     font-family: 'Roboto Mono';
-    background-color: var(--dark-bg);
+    /* background: radial-gradient(purple, var(--blue), white);
+    background-position: fixed ; */
+    background: url(https://static.vecteezy.com/system/resources/previews/001/896/932/non_2x/light-blue-and-purple-bokeh-background-free-photo.jpg);
+    background-attachment: fixed;
   }
   ul,li{
     list-style: none;

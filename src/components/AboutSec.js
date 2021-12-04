@@ -10,6 +10,10 @@ import MeImg from '../assets/images/MeImage.GIF';
 
 const AboutSectionStyles = styled.div`
   padding: 10rem 0;
+
+  /* background: url(https://static.vecteezy.com/system/resources/previews/001/896/932/non_2x/light-blue-and-purple-bokeh-background-free-photo.jpg);
+  background-attachment: fixed; */
+
   .container {
     display: flex;
     align-items: center;
@@ -81,7 +85,6 @@ export default function AboutSec() {
   return (
     <AboutSectionStyles>
       <div className="container">
-        {/* <div className="aboutB" style={AboutSectionStyles} /> */}
         <div className="aboutSection__left">
           <SectionTitle
             subheading="Let me introduce myself"
