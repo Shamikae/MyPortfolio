@@ -20,6 +20,10 @@ const ButtonStyle = styled.div`
     backdrop-filter: blur(8.2px);
     -webkit-backdrop-filter: blur(8.2px);
     border: 1px solid rgba(255, 255, 255, 0.17);
+
+    :hover {
+      box-shadow: 0px 0px 100px 0px rgba(128, 0, 128, 1);
+    }
   }
   @media only screen and (max-width: 768px) {
     .button {

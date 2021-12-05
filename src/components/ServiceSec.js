@@ -7,7 +7,7 @@ import ServicesSectionItem from './ServicesSectionItem';
 
 const ServicesItemsStyles = styled.div`
   padding: 10rem 0;
-  background-color: var(--blue);
+  background-color: rgba(255, 255, 255, 0.63);
   .services__allItems {
     display: flex;
     gap: 10rem;

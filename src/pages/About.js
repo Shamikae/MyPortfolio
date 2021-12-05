@@ -26,7 +26,7 @@ const AboutPageStyles = styled.div`
     font-size: 2.2rem;
     margin-bottom: 2rem;
     span {
-      background-color: var(--deep-dark);
+      background-color: var(--frost);
       padding: 0.5rem;
       border-radius: 8px;
     }
@@ -115,38 +115,6 @@ export default function About() {
           </div>
           <div className="about__info__items">
             <div className="about__info__item">
-              <h1 className="about__info__heading">Education</h1>
-
-              <AboutInfoItem
-                title="School"
-                items={['Nasirabad Govt. High School, Chattogram']}
-              />
-              <AboutInfoItem
-                title="Collage"
-                items={['BAF Shaheen College Chattogram']}
-              />
-              <AboutInfoItem
-                title="Varsity"
-                items={['University Of Chitiagong']}
-              />
-            </div>
-            <div className="about__info__item">
-              <h1 className="about__info__heading">My Skills</h1>
-
-              <AboutInfoItem
-                title="FrontEnd"
-                items={['HTML', 'CSS', 'JavaScript', 'REACT']}
-              />
-              <AboutInfoItem
-                title="BackEnd"
-                items={['Node', 'Express', 'PHP']}
-              />
-              <AboutInfoItem
-                title="Design"
-                items={['Photoshop', 'After Effects', 'Figma']}
-              />
-            </div>
-            <div className="about__info__item">
               <h1 className="about__info__heading">Experiences</h1>
 
               <AboutInfoItem
@@ -162,6 +130,35 @@ export default function About() {
                 items={['Freelance web Developer']}
               />
             </div>
+          </div>
+          <div className="about__info__item">
+            <h1 className="about__info__heading">My Skills</h1>
+
+            <AboutInfoItem
+              title="FrontEnd"
+              items={['HTML', 'CSS', 'JavaScript', 'REACT']}
+            />
+            <AboutInfoItem title="BackEnd" items={['Node', 'Express', 'PHP']} />
+            <AboutInfoItem
+              title="Design"
+              items={['Photoshop', 'After Effects', 'Figma']}
+            />
+          </div>
+          <div className="about__info__item">
+            <h1 className="about__info__heading">Education</h1>
+
+            <AboutInfoItem
+              title="School"
+              items={['Nasirabad Govt. High School, Chattogram']}
+            />
+            <AboutInfoItem
+              title="Collage"
+              items={['BAF Shaheen College Chattogram']}
+            />
+            <AboutInfoItem
+              title="Varsity"
+              items={['University Of Chitiagong']}
+            />
           </div>
         </div>
         <ContactBanner />

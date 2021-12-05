@@ -15,8 +15,8 @@ const FormStyle = styled.form`
     width: 100%;
     font-size: 2rem;
     padding: 1.2rem;
-    color: var(--gray-1);
-    background-color: var(--deep-dark);
+    color: black;
+    background-color: var(--frost);
     outline: none;
     border: none;
     border-radius: 8px;
@@ -27,7 +27,7 @@ const FormStyle = styled.form`
     resize: vertical;
   }
   button[type='submit'] {
-    background-color: var(--gray-1);
+    background-color: var(--frost);
     color: var(--black);
     font-size: 2rem;
     display: inline-block;
@@ -36,6 +36,9 @@ const FormStyle = styled.form`
     padding: 1rem 4rem;
     border-radius: 8px;
     cursor: pointer;
+    :hover {
+      box-shadow: 0px 0px 100px 0px rgba(128, 0, 128, 1);
+    }
   }
 `;
 

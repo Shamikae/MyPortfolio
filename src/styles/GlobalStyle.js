@@ -14,13 +14,14 @@ const GlobalStyles = createGlobalStyle`
     --white : white;
     --black: black;
     --blue: #88AED0;
+    --frost: rgba(255, 255, 255, 0.63);
   }
   html{
     font-size: 10px;
     font-family: 'Roboto Mono';
     /* background: radial-gradient(purple, var(--blue), white);
     background-position: fixed ; */
-    background: url(https://png.pngtree.com/thumb_back/fh260/background/20201013/pngtree-trending-gradient-design-image_414362.jpg);
+    background: url(https://4kwallpapers.com/images/walls/thumbs_3t/3962.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;

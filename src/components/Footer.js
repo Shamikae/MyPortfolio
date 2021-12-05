@@ -5,8 +5,9 @@ import PText from './PText';
 // import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const FooterStyle = styled.div`
-  background-color: var(--deep-dark);
+  background-color: var(--frost);
   padding-top: 10rem;
+  height: 50vh;
   .container {
     display: flex;
     justify-content: center;
@@ -25,10 +26,10 @@ const FooterStyle = styled.div`
     margin-bottom: 1rem;
   }
   .copyright {
-    background-color: var(--dark-bg);
+    /* background-color: var(--dark-bg); */
     text-align: center;
     padding: 1rem 0;
-    margin-top: 5rem;
+    margin-top: 10rem;
     .para {
       margin-left: 0;
     }

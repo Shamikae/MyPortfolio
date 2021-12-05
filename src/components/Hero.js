@@ -133,6 +133,9 @@ const HeroStyles = styled.div`
           transform: rotate(360deg);
           letter-spacing: 5px;
           margin-bottom: 2rem;
+          :hover {
+            box-shadow: 0px 0px 100px 0px rgba(128, 0, 128, 1);
+          }
         }
       }
     }

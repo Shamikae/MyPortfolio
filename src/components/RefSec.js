@@ -10,7 +10,7 @@ const RefSectionStyles = styled.div`
   overflow-x: hidden;
   padding: 10rem 0;
   text-align: center;
-  background-color: blue;
+  background-color: var(--frost);
   .Ref__wrapper {
     position: relative;
     max-width: 700px;
@@ -20,10 +20,11 @@ const RefSectionStyles = styled.div`
     width: 100%;
     height: fit-content;
     padding: 3rem;
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: var(--frost);
     /* background-color: var(--deep-dark); */
     border-radius: 12px;
     margin-top: 5rem;
+    box-shadow: inset 0 0 10px rgba(125, 203, 255, 0.4);
   }
   .Ref__desc {
     .para {
@@ -64,6 +65,10 @@ const RefSectionStyles = styled.div`
       backdrop-filter: blur(8.2px);
       -webkit-backdrop-filter: blur(8.2px);
       border: 1px solid rgba(255, 255, 255, 0.17);
+
+      :hover {
+        box-shadow: 0px 0px 100px 0px rgba(128, 0, 128, 1);
+      }
     }
   }
   .fade-enter {

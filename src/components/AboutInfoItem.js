@@ -19,7 +19,7 @@ const AboutItemStyles = styled.div`
     left: 18rem;
   }
   .item {
-    background-color: var(--deep-dark);
+    /* background-color: var(--frost); */
     padding: 1rem;
     border-radius: 8px;
   }
