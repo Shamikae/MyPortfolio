@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import PText from '../components/PText';
 // import Button from '../components/Button';
-import AboutImg from '../assets/images/about-page-img.png';
+import AboutImg from '../assets/images/Selfie.jpg';
 import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
 import ResumeButton from '../components/Resumebutton';
@@ -119,11 +119,11 @@ export default function About() {
 
               <AboutInfoItem
                 title="2010-2012"
-                items={['junior developer at web Cifar']}
+                items={['Junior developer at web Scrapit']}
               />
               <AboutInfoItem
                 title="2012-2016"
-                items={['Front end developer at web Cifar ']}
+                items={['Front end developer at web Scrapit']}
               />
               <AboutInfoItem
                 title="2016-"
@@ -147,18 +147,12 @@ export default function About() {
           <div className="about__info__item">
             <h1 className="about__info__heading">Education</h1>
 
-            <AboutInfoItem
-              title="School"
-              items={['Nasirabad Govt. High School, Chattogram']}
-            />
+            <AboutInfoItem title="School" items={[' Govt. High School, JFK']} />
             <AboutInfoItem
               title="Collage"
-              items={['BAF Shaheen College Chattogram']}
+              items={['BAF Shaheen College JFK']}
             />
-            <AboutInfoItem
-              title="Varsity"
-              items={['University Of Chitiagong']}
-            />
+            <AboutInfoItem title="Varsity" items={['University Of JFK']} />
           </div>
         </div>
         <ContactBanner />
