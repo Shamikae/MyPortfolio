@@ -5,7 +5,7 @@ import Button from './Button';
 import PText from './PText';
 import SectionTitle from './SectionTitle';
 // import AboutImg from '../assets/images/about-sec-img.png';
-import MeImg from '../assets/images/MeImage.gif';
+import MeImg from '../assets/images/meimage.gif';
 // import blue from '../assets/images/blue.jpg';
 
 const AboutSectionStyles = styled.div`
