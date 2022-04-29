@@ -91,7 +91,7 @@ export default function ProjectsSec() {
           >
             {projects.map((project, index) => {
               // eslint-disable-next-line array-callback-return
-              if (index >= 5) return;
+              if (index >= 6) return;
               return (
                 <SwiperSlide key={project.id}>
                   <ProjectItem
